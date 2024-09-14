@@ -36,6 +36,13 @@ sudo groupadd docker
 # Add your user to the docker group.
 sudo usermod -aG docker $USER
 
-# verify Docker install
-docker run hello-world
+
+echo "##########################"
+echo "# Complete"
+echo "# Please logout and back in again"
+echo "# "
+echo "# You can verify your Docker install by running;"
+echo "#    docker run hello-world"
+
+
 
