@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# https://docs.docker.com/engine/install/ubuntu/
+# From https://docs.docker.com/engine/install/ubuntu/
 
 # uninstall unofficial packages
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
@@ -30,13 +30,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 
-# verify Docker install
-sudo docker run hello-world
-
-
 #Create the docker group.
 sudo groupadd docker
 
 # Add your user to the docker group.
 sudo usermod -aG docker $USER
+
+# verify Docker install
+docker run hello-world
 
