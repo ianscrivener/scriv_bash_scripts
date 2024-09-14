@@ -6,8 +6,8 @@ docker run -d \
     --ulimit nofile=262144:262144 \
     -p 18123:8123 \
     -p 19000:9000 \
-    -v $(realpath ./clickhouse/data):/var/lib/clickhouse/ \
-    -v $(realpath ./clickhouse/logs):/var/log/clickhouse-server/ \
+    -v ./clickhouse/data:/var/lib/clickhouse/ \
+    -v ./clickhouse/logs:/var/log/clickhouse-server/ \
     clickhouse/clickhouse-server
 
 echo "##############################"    
@@ -20,3 +20,4 @@ echo "Please run;"
 echo "sudo ./ufw_add_port.sh 18123"    
 echo "sudo ./ufw_add_port.sh 19000"
 
+docker container ls

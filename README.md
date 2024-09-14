@@ -34,3 +34,12 @@ curl -sSl https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main
 wget https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main/ubuntu_2x.04/ufw_add_port.sh
 sudo ./ufw_add_port.sh 3333
 ```
+
+**Run ClickHouse in Docker**
+```
+# run as normal user  
+curl -sSl https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main/ubuntu_2x.04/run_clickhouse.sh | bash
+
+sudo ./ufw_add_port.sh 18123    
+sudo ./ufw_add_port.sh 19000
+```
