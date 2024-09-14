@@ -20,7 +20,7 @@ curl -sSL https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main
 ```
 
 
-**Install and confdigure UWF Ubuntu Firewall**
+**Install and configure UWF Ubuntu Firewall**
 
 ```
 # run as normal user  
