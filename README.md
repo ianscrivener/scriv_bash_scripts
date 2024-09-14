@@ -35,6 +35,15 @@ wget https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main/ubun
 sudo ./ufw_add_port.sh 3333
 ```
 
+
+**Block a port in UFW**
+```
+wget https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main/ubuntu_2x.04/ufw_remove_ports.sh
+sudo ./ufw_remove_ports.sh 3333 4444 5555
+```
+
+
+
 **Run ClickHouse in Docker**
 ```
 # run as normal user  
@@ -43,3 +52,5 @@ curl -sSl https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main
 sudo ./ufw_add_port.sh 18123    
 sudo ./ufw_add_port.sh 19000
 ```
+
+
