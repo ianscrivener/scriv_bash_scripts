@@ -18,3 +18,12 @@ curl -sSL https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main
 # run as normal user 
 curl -sSL https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main/ubuntu_2x.04/docker_compose_install.sh | bash
 ```
+
+
+**Install and confdigure UWF Ubuntu Firewall**
+
+```
+# run as normal user  
+curl -sSl https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main/ubuntu_2x.04/ufw_install.sh | bash
+
+```

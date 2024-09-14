@@ -4,27 +4,27 @@
 set -e
 
 # Update package lists
-apt-get update
+sudo apt-get update
 
 # Install ufw without prompts
-DEBIAN_FRONTEND=noninteractive apt-get install -y ufw
+DEBIAN_FRONTEND=noninteractive sudo apt-get install -y ufw
 
 # Set default policies
-ufw default deny incoming
-ufw default allow outgoing
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
 
 # Allow SSH (port 22) to maintain remote access
-ufw allow ssh
-ufw allow 22/tcp  # Explicitly allow port 22 for SSH
+sudo ufw allow ssh
+sudo ufw allow 22/tcp  # Explicitly allow port 22 for SSH
 
 # Allow other common ports (customize as needed)
-ufw allow 80/tcp  # HTTP
-ufw allow 443/tcp # HTTPS
+sudo ufw allow 80/tcp  # HTTP
+sudo ufw allow 443/tcp # HTTPS
 
 # Enable ufw without prompt
-echo "y" | ufw enable
+sudo echo "y" | ufw enable
 
 # Display ufw status
-ufw status verbose
+sudo ufw status verbose
 
 echo "UFW setup completed successfully."
