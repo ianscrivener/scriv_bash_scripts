@@ -27,3 +27,11 @@ curl -sSL https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main
 curl -sSl https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main/ubuntu_2x.04/ufw_install.sh | bash
 
 ```
+
+
+** Add an allowed port to UFW
+
+```
+wget https://raw.githubusercontent.com/ianscrivener/scriv_bash_scripts/main/ubuntu_2x.04/ufw_add_port.sh
+sudo ./ufw_add_port.sh 3333
+```
